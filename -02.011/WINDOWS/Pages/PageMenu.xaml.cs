@@ -115,12 +115,25 @@ namespace _02._011.WINDOWS.Pages
 
         private void Button_Add(object sender, RoutedEventArgs e)
         {
-
+            TasksNotes task = new();
+            Context.Instance.TaskNotes.Add(task);
+            PageAddTaskNote pageAdd = new(task);
+            Navigation.Navigation.СurrentFrame.Navigate(pageAdd);
         }
 
         private void Button_Delete(object sender, RoutedEventArgs e)
         {
-
+            if (TasksNotesTable.SelectedItem != null)
+            {
+                TasksNotes task = (TasksNotes)TasksNotesTable.SelectedItem;
+                Context.Instance.TaskNotes.Remove(task);
+                Context.Instance.SaveChanges();
+                UpdateTable(TasksNotesTable);
+            }
+            else
+            {
+                return;
+            }
         }
 
         private void Button_Description(object sender, RoutedEventArgs e)
@@ -130,7 +143,10 @@ namespace _02._011.WINDOWS.Pages
                 PageDescription pageDescription = new((TasksNotes)TasksNotesTable.SelectedItem);
                 Navigation.Navigation.СurrentFrame.Navigate(pageDescription);
             }
-            else return;
+            else
+            {
+                return;
+            }
         }
 
         private void FilterName_TextChanged(object sender, TextChangedEventArgs e)
