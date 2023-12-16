@@ -110,7 +110,20 @@ namespace _02._011.WINDOWS.Pages
 
         private void Button_Reset(object sender, RoutedEventArgs e)
         {
-
+            Today.IsChecked = false;
+            Yesterday.IsChecked = false;
+            Tsk.IsChecked = false;
+            Nt.IsChecked = false;
+            Complet.IsChecked = false;
+            NComplet.IsChecked = false;
+            AllDay.IsChecked = false;
+            Tags.Text = null;
+            FilterName.Text = null;
+            FilterDate = 0;
+            FilterFields = 0;
+            FilterType = 0;
+            FilterComplet = 0;
+            UpdateTable(TasksNotesTable);
         }
 
         private void Button_Add(object sender, RoutedEventArgs e)
