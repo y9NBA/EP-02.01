@@ -10,7 +10,6 @@
 
   <ItemGroup>
     <Folder Include="WINDOWS\Pages\" />
-    <Folder Include="Navigation\" />
   </ItemGroup>
 
   <ItemGroup>
