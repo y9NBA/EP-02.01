@@ -136,7 +136,7 @@ namespace _02._011.WINDOWS.Pages
             Descr.Text = tasksNotes.FullDescription;
             Data.Text = tasksNotes.PlannedDate;
             Task_Note.SelectedItem = tasksNotes.Types;
-            Comp.IsChecked = tasksNotes.DateСompletion == "" ? false : true;
+            Comp.IsChecked = !(tasksNotes.DateСompletion == "");
         }
     }
 }
