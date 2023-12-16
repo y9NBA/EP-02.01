@@ -1,5 +1,4 @@
-﻿using _02._011.WINDOWS.Pages;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,22 +13,21 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace _02._011
+namespace _02._011.WINDOWS.Pages
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Логика взаимодействия для PageEntry.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class PageEntry : Page
     {
-        public MainWindow()
+        public PageEntry()
         {
             InitializeComponent();
         }
 
-        private void Window_Loaded(object sender, RoutedEventArgs e)
+        private void Button_MainMenu(object sender, RoutedEventArgs e)
         {
-            Navigation.Navigation.СurrentFrame = MainFrame;
-            Navigation.Navigation.СurrentFrame.Navigate(new PageEntry());
+            Navigation.Navigation.СurrentFrame.Navigate(new PageMenu());
         }
     }
 }
