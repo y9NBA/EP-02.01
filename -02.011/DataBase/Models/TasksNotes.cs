@@ -43,7 +43,7 @@ namespace _02._011.DataBase.Models
         }
         public string DateСompletion { get; set; } = ""; //Фактическая дата выполнения
 
-        public Type Type { get; set; } //Тип записи
+        public Types Types { get; set; } //Тип записи
 
         public TasksNotes() { } //Конструктор класса, нечего сказать -_('v')_-
     }

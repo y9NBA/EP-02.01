@@ -44,7 +44,7 @@
             <Button Content="Reset Filter" Margin="0,0,0,250" Width="100" Height="35" Click="Button_Reset"/>
             <Button Content="Add" Margin="0,0,0,150" Width="100" Height="35" Click="Button_Add"/>
             <Button Content="Delete" Margin="0,0,0,50" Width="100" Height="35" Click="Button_Delete"/>
-            <Button Content="Description" Margin="0,0,0,-50" Width="100" Height="35" Click="Button_Discription"/>
+            <Button Content="Description" Margin="0,0,0,-50" Width="100" Height="35" Click="Button_Description"/>
             <Button Content="Back" Margin="0,0,0,-150" Width="100" Height="35" Click="Button_Back"/>
         </Grid>
         <Grid Height="100" Width="800" VerticalAlignment="Top">
