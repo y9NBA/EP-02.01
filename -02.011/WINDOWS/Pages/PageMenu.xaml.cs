@@ -164,17 +164,24 @@ namespace _02._011.WINDOWS.Pages
 
         private void FilterName_TextChanged(object sender, TextChangedEventArgs e)
         {
-
+            FilterFields = 1;
+            UpdateTable(TasksNotesTable);
         }
 
         private void Tags_TextChanged(object sender, TextChangedEventArgs e)
         {
-
+            FilterFields = 2;
+            UpdateTable(TasksNotesTable);
         }
 
         private void TasksNotesTable_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-
+            if (TasksNotesTable.SelectedItem != null)
+            {
+                TasksNotes task = (TasksNotes)TasksNotesTable.SelectedItem;
+                PageAddTaskNote pageAdd = new(task);
+                Navigation.Navigation.СurrentFrame.Navigate(pageAdd);
+            }
         }
 
         public void UpdateTable(DataGrid TasksNotesTable)
