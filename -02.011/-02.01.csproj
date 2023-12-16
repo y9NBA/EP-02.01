@@ -9,7 +9,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="DataBase\Models\" />
     <Folder Include="WINDOWS\Pages\" />
     <Folder Include="Navigation\" />
   </ItemGroup>
