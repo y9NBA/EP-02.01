@@ -36,8 +36,8 @@
             </GroupBox>
         </Grid>
         <Grid Height="400" Width="500" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,100,0,0" Grid.RowSpan="2">
-            <DataGrid MouseDoubleClick="TaskNoteTable_MouseDoubleClick" CanUserDeleteRows="False"
-     CanUserAddRows="False" AutoGenerateColumns="False" x:Name="TaskNoteTable">
+            <DataGrid x:Name="TasksNotesTable" MouseDoubleClick="TasksNotesTable_MouseDoubleClick" 
+                      CanUserDeleteRows="False" CanUserAddRows="False" AutoGenerateColumns="False">
             </DataGrid>
         </Grid>
         <Grid VerticalAlignment="Bottom" Height="350" Width="150" HorizontalAlignment="Right" Grid.RowSpan="2">

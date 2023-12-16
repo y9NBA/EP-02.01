@@ -34,14 +34,14 @@ namespace _02._011.WINDOWS.Pages
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
-            TaskNoteTable.Columns.Clear();
-            TaskNoteTable.Columns.Add(CreateColumn("Created", "CreateDate"));
-            TaskNoteTable.Columns.Add(CreateColumn("ShortName", "ShortName"));
-            TaskNoteTable.Columns.Add(CreateColumn("Tags", "Tags"));
-            TaskNoteTable.Columns.Add(CreateColumn("PlannedDate", "PlannedDate"));
-            TaskNoteTable.Columns.Add(CreateColumn("DaysLeft", "DaysLeft"));
-            TaskNoteTable.Columns.Add(CreateColumn("Completion", "DateСompletion"));
-            TaskNoteTable.Columns.Add(CreateColumn("Type", "Type.Name"));
+            TasksNotesTable.Columns.Clear();
+            TasksNotesTable.Columns.Add(CreateColumn("Created", "CreateDate"));
+            TasksNotesTable.Columns.Add(CreateColumn("ShortName", "ShortName"));
+            TasksNotesTable.Columns.Add(CreateColumn("Tags", "Tags"));
+            TasksNotesTable.Columns.Add(CreateColumn("PlannedDate", "PlannedDate"));
+            TasksNotesTable.Columns.Add(CreateColumn("DaysLeft", "DaysLeft"));
+            TasksNotesTable.Columns.Add(CreateColumn("Completion", "DateСompletion"));
+            TasksNotesTable.Columns.Add(CreateColumn("Type", "Type.Name"));
         }
 
         public static DataGridTextColumn CreateColumn(string header, string binding)
@@ -57,6 +57,76 @@ namespace _02._011.WINDOWS.Pages
             };
             column.Binding = textBinding;
             return column;
+        }
+
+        private void Today_RB(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Yesterday_RB(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void AllDay_RB(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Tsk_RB(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Nt_RB(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Complet_RB(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void NComplet_RB(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Reset(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Add(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Delete(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Discription(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void FilterName_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void Tags_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void TasksNotesTable_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+
         }
     }
 }
