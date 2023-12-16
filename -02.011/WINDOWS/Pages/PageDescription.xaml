@@ -6,9 +6,13 @@
       xmlns:local="clr-namespace:_02._011.WINDOWS.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="PageDescription">
+      Title="PageDescription"
+      Loaded="Page_Loaded">
 
     <Grid>
-        
+        <Button Content="Back" Margin="0,20,20,0" Width="100" Height="35" 
+                HorizontalAlignment="Right" VerticalAlignment="Top" Click="Button_Back"/>
+        <TextBlock x:Name="FDescription" Width="400" Height="200" 
+                   VerticalAlignment="Center" HorizontalAlignment="Center"/>
     </Grid>
 </Page>

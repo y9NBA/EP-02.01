@@ -125,7 +125,12 @@ namespace _02._011.WINDOWS.Pages
 
         private void Button_Description(object sender, RoutedEventArgs e)
         {
-
+            if (TasksNotesTable.SelectedItem != null)
+            {
+                PageDescription pageDescription = new((TasksNotes)TasksNotesTable.SelectedItem);
+                Navigation.Navigation.СurrentFrame.Navigate(pageDescription);
+            }
+            else return;
         }
 
         private void FilterName_TextChanged(object sender, TextChangedEventArgs e)
@@ -146,7 +151,7 @@ namespace _02._011.WINDOWS.Pages
         public void UpdateTable(DataGrid TasksNotesTable)
         {
             TasksNotesTable.ItemsSource = null;
-            List<TasksNotes> notes = Context.Instance.TaskNotes.Include("Type").ToList();
+            List<TasksNotes> notes = Context.Instance.TaskNotes.Include("Types").ToList();
             if (FilterDate == 1)
             {
                 string date = DateTime.Now.ToString("d");

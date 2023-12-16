@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _02._011.DataBase.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,21 @@ namespace _02._011.WINDOWS.Pages
     /// </summary>
     public partial class PageDescription : Page
     {
-        public PageDescription()
+        public static TasksNotes task {  get; set; }
+        public PageDescription(TasksNotes tasksNotes)
         {
             InitializeComponent();
+            task = tasksNotes;
+        }
+
+        private void Button_Back(object sender, RoutedEventArgs e)
+        {
+            Navigation.Navigation.СurrentFrame.Navigate(new PageMenu());
+        }
+
+        private void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+            FDescription.Text = task.FullDescription;
         }
     }
 }
