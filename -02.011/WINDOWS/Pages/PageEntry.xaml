@@ -10,7 +10,7 @@
 
     <Grid>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Button Content="Начать" Margin="-30,-15" Click="Button_MainMenu"/>
+            <Button Content="заметки/задачи" Margin="-60,-20" Click="Button_MainMenu"/>
         </StackPanel>
     </Grid>
 </Page>

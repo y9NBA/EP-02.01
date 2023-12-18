@@ -195,8 +195,8 @@ namespace _02._011.WINDOWS.Pages
             }
             if (FilterDate == 2)
             {
-                string yeasterdayDateStr = DateTime.Now.AddDays(-1).Date.ToString("d");
-                notes = notes.Where(p => p.CreateDate == yeasterdayDateStr).ToList();
+                string yesterdayDateStr = DateTime.Now.AddDays(-1).Date.ToString("d");
+                notes = notes.Where(p => p.CreateDate == yesterdayDateStr).ToList();
             }
             if (FilterDate == 3)
             {
