@@ -15,20 +15,20 @@
             <RowDefinition Height="67*"/>
         </Grid.RowDefinitions>
         <Grid Width="150" Height="400" VerticalAlignment="Bottom" HorizontalAlignment="Left" Grid.RowSpan="2">
-            <GroupBox Margin="0,0,0,250" Height="120" Header="FiltersDate">
+            <GroupBox Margin="0,0,0,250" Height="120" Header="По дате">
                 <StackPanel>
                     <RadioButton Content="Сегодня" x:Name="Today" Click="Today_RB"/>
                     <RadioButton Content="Вчера" x:Name="Yesterday" Click="Yesterday_RB"/>
                     <RadioButton Content="За все дни" x:Name="AllDay" Click="AllDay_RB"/>
                 </StackPanel>
             </GroupBox>
-            <GroupBox Margin="0,0,0,0" Height="120" Header="Type">
+            <GroupBox Margin="0,0,0,0" Height="120" Header="Тип записей">
                 <StackPanel>
                     <RadioButton Content="Задачи" x:Name="Tsk" Click="Tsk_RB"/>
                     <RadioButton Content="Заметки" x:Name="Nt" Click="Nt_RB"/>
                 </StackPanel>
             </GroupBox>
-            <GroupBox Margin="0,0,0,-250" Height="120" Header="Completed">
+            <GroupBox Margin="0,0,0,-250" Height="120" Header="Завершённость">
                 <StackPanel>
                     <RadioButton Content="Выполнено" x:Name="Complet" Click="Complet_RB"/>
                     <RadioButton Content="Не выполнено" x:Name="NComplet" Click="NComplet_RB"/>
@@ -41,20 +41,20 @@
             </DataGrid>
         </Grid>
         <Grid VerticalAlignment="Bottom" Height="350" Width="150" HorizontalAlignment="Right" Grid.RowSpan="2">
-            <Button Content="Reset Filter" Margin="0,0,0,250" Width="100" Height="35" Click="Button_Reset"/>
-            <Button Content="Add" Margin="0,0,0,150" Width="100" Height="35" Click="Button_Add"/>
-            <Button Content="Delete" Margin="0,0,0,50" Width="100" Height="35" Click="Button_Delete"/>
-            <Button Content="Description" Margin="0,0,0,-50" Width="100" Height="35" Click="Button_Description"/>
-            <Button Content="Back" Margin="0,0,0,-150" Width="100" Height="35" Click="Button_Back"/>
+            <Button Content="Сбросить" Margin="0,0,0,250" Width="100" Height="35" Click="Button_Reset"/>
+            <Button Content="Добавить" Margin="0,0,0,150" Width="100" Height="35" Click="Button_Add"/>
+            <Button Content="Удалить" Margin="0,0,0,50" Width="100" Height="35" Click="Button_Delete"/>
+            <Button Content="Описание" Margin="0,0,0,-50" Width="100" Height="35" Click="Button_Description"/>
+            <Button Content="Назад" Margin="0,0,0,-150" Width="100" Height="35" Click="Button_Back"/>
         </Grid>
         <Grid Height="100" Width="800" VerticalAlignment="Top">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <Label Content="Filter name" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="70,0,0,0"/>
+            <Label Content="Фильтр по имени" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="45,0,0,0"/>
             <TextBox x:Name="FilterName" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="100" TextChanged="FilterName_TextChanged"/>
-            <Label Content="Tags" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="110,0,0,0"/>
+            <Label Content="Теги" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="110,0,0,0"/>
             <TextBox x:Name="Tags" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="100" TextChanged="Tags_TextChanged"/>
         </Grid>
     </Grid>

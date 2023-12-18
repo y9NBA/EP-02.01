@@ -20,20 +20,20 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Button Content="Save" Height="35" Width="120" Grid.Column="0" Grid.Row="3" Click="Button_Save"/>
-        <Button Content="Cancel" Height="35" Width="120" Grid.Column="1" Grid.Row="3" Click="Button_Cancel"/>
+        <Button Content="Сохранить" Height="35" Width="120" Grid.Column="0" Grid.Row="3" Click="Button_Save"/>
+        <Button Content="Отмена" Height="35" Width="120" Grid.Column="1" Grid.Row="3" Click="Button_Cancel"/>
 
         <TextBlock VerticalAlignment="Center" Text="Короткое название" Grid.Column="0" Grid.Row="0"/>
         <TextBlock VerticalAlignment="Center" Text="Начало дата" Grid.Column="0" Grid.Row="1"/>
         <TextBlock VerticalAlignment="Center" Text="Описание" Grid.Column="0" Grid.Row="2"/>
         <TextBlock VerticalAlignment="Center" Text="Теги" Grid.Column="1" Grid.Row="0"/>
-        <TextBlock VerticalAlignment="Center" Text="тип" Grid.Column="1" Grid.Row="1"/>
+        <TextBlock VerticalAlignment="Center" Text="Тип" Grid.Column="1" Grid.Row="1"/>
 
         <TextBox Grid.Row="0" Grid.Column="0" Width="180" Height="25" x:Name="Name"/>
         <DatePicker Grid.Row="1" Grid.Column="0" Width="180" Height="25" x:Name="Data"/>
         <TextBox Grid.Row="2" Grid.Column="0" Width="180" Height="25" x:Name="Descr"/>
         <TextBox Grid.Row="0" Grid.Column="1" Width="180" Height="25" x:Name="tgs"/>
         <ComboBox Grid.Row="1" Grid.Column="1" Width="180" Height="25" x:Name="Task_Note" SelectionChanged="Task_Note_SelectionChanged" DisplayMemberPath="Name"/>
-        <CheckBox Content="Complete" Grid.Row="2" Grid.Column="1" Width="180" Height="25" x:Name="Comp"/>
+        <CheckBox Content="Завершён" Grid.Row="2" Grid.Column="1" Width="180" Height="25" x:Name="Comp"/>
     </Grid>
 </Page>

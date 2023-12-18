@@ -42,13 +42,13 @@ namespace _02._011.WINDOWS.Pages
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
             TasksNotesTable.Columns.Clear();
-            TasksNotesTable.Columns.Add(CreateColumn("Created", "CreateDate"));
-            TasksNotesTable.Columns.Add(CreateColumn("ShortName", "ShortName"));
-            TasksNotesTable.Columns.Add(CreateColumn("Tags", "Tags"));
-            TasksNotesTable.Columns.Add(CreateColumn("PlannedDate", "PlannedDate"));
-            TasksNotesTable.Columns.Add(CreateColumn("DaysLeft", "DaysLeft"));
-            TasksNotesTable.Columns.Add(CreateColumn("Completion", "DateСompletion"));
-            TasksNotesTable.Columns.Add(CreateColumn("Type", "Type.Name"));
+            TasksNotesTable.Columns.Add(CreateColumn("Создано", "CreateDate"));
+            TasksNotesTable.Columns.Add(CreateColumn("Краткое имя", "ShortName"));
+            TasksNotesTable.Columns.Add(CreateColumn("Теги", "Tags"));
+            TasksNotesTable.Columns.Add(CreateColumn("План даты", "PlannedDate"));
+            TasksNotesTable.Columns.Add(CreateColumn("Оставшиеся дни", "DaysLeft"));
+            TasksNotesTable.Columns.Add(CreateColumn("Завершено", "DateСompletion"));
+            TasksNotesTable.Columns.Add(CreateColumn("Тип", "Type.Name"));
         }
 
         public static DataGridTextColumn CreateColumn(string header, string binding)

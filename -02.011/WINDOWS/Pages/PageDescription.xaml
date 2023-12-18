@@ -10,7 +10,7 @@
       Loaded="Page_Loaded">
 
     <Grid>
-        <Button Content="Back" Margin="0,20,20,0" Width="100" Height="35" 
+        <Button Content="Назад" Margin="0,20,20,0" Width="100" Height="35" 
                 HorizontalAlignment="Right" VerticalAlignment="Top" Click="Button_Back"/>
         <TextBlock x:Name="FDescription" Width="400" Height="200" 
                    VerticalAlignment="Center" HorizontalAlignment="Center"/>
