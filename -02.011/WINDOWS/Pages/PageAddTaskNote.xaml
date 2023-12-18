@@ -24,7 +24,7 @@
         <Button Content="Отмена" Height="35" Width="120" Grid.Column="1" Grid.Row="3" Click="Button_Cancel"/>
 
         <TextBlock VerticalAlignment="Center" Text="Короткое название" Grid.Column="0" Grid.Row="0"/>
-        <TextBlock VerticalAlignment="Center" Text="Начало дата" Grid.Column="0" Grid.Row="1"/>
+        <TextBlock VerticalAlignment="Center" Text="План дата" Grid.Column="0" Grid.Row="1"/>
         <TextBlock VerticalAlignment="Center" Text="Описание" Grid.Column="0" Grid.Row="2"/>
         <TextBlock VerticalAlignment="Center" Text="Теги" Grid.Column="1" Grid.Row="0"/>
         <TextBlock VerticalAlignment="Center" Text="Тип" Grid.Column="1" Grid.Row="1"/>
